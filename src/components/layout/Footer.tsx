@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
 
@@ -6,19 +5,23 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-echo-primary text-white">
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="inline-block">
+            <Link to="/" className="inline-flex items-center">
+              <img 
+                src="/lovable-uploads/41ef94e7-9277-4221-831f-6c434d02c5ea.png" 
+                alt="Echo Nordic Hub Logo" 
+                className="h-12 mr-4"
+              />
               <span className="font-display text-2xl font-semibold tracking-tight">
-                Luminous<span className="text-white/80">Rentals</span>
+                Echo<span className="text-echo-accent">Nordic Hub</span>
               </span>
             </Link>
-            <p className="mt-4 text-sm text-primary-foreground/80 max-w-md">
-              Premium audio and lighting equipment rentals for events of all sizes. 
-              From intimate gatherings to stadium-sized productions, we provide the 
-              highest quality gear to make your event shine.
+            <p className="mt-4 text-sm text-white/80 max-w-md">
+              Innovative technology solutions with a Nordic touch. 
+              Connecting businesses through cutting-edge equipment and services.
             </p>
             <div className="flex space-x-4 mt-6">
               <SocialLink href="#" aria-label="Facebook">
