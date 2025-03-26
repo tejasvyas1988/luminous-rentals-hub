@@ -73,12 +73,17 @@ export default {
 				},
 				'echo-accent': {
 					DEFAULT: '#4ECDC4',
-					light: '#A0E7E5',
+					light: '#6ADBD0',
 					dark: '#3AA39F'
 				},
-				'echo-gray': {
-					DEFAULT: '#F2F2F2',
-					dark: '#D3D3D3'
+				'echo-neutral': {
+					DEFAULT: '#8E9BA9',
+					light: '#B0C4CE',
+					dark: '#5D6D7A'
+				},
+				'echo-background': {
+					DEFAULT: '#F4F7F9',
+					dark: '#E6EDF3'
 				}
 			},
 			borderRadius: {

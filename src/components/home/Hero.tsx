@@ -41,12 +41,12 @@ const Hero = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           transform: `translateY(${offset}px)`,
-          filter: "brightness(0.6)",
+          filter: "brightness(0.7)",
         }}
       />
       
       {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-echo-primary/70 to-echo-primary/50 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-echo-primary/80 to-echo-primary/60 z-10"></div>
       
       {/* Content */}
       <div className="container mx-auto px-4 md:px-6 relative z-20 text-white">
@@ -56,11 +56,11 @@ const Hero = () => {
           </span>
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-fade-in animate-delay-200">
             Elevate Your <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-echo-accent to-white/80">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-echo-accent to-white/90">
               Nordic Tech Experience
             </span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 animate-fade-in animate-delay-300">
+          <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 animate-fade-in animate-delay-300">
             Cutting-edge equipment solutions for businesses and events, 
             designed with Nordic innovation and precision.
           </p>
@@ -74,7 +74,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="rounded-full px-8 py-6 text-base bg-transparent border-echo-accent/50 text-white hover:bg-echo-accent/10"
+              className="rounded-full px-8 py-6 text-base bg-transparent border-echo-accent/60 text-white hover:bg-echo-accent/20"
             >
               Get a Quote
             </Button>
@@ -86,7 +86,7 @@ const Hero = () => {
       <div className="absolute bottom-10 left-0 right-0 flex justify-center z-20 animate-bounce">
         <button 
           onClick={scrollToNext}
-          className="flex items-center justify-center w-10 h-10 rounded-full bg-echo-accent/20 backdrop-blur-sm hover:bg-echo-accent/30 transition-colors"
+          className="flex items-center justify-center w-10 h-10 rounded-full bg-echo-accent/30 backdrop-blur-sm hover:bg-echo-accent/40 transition-colors"
           aria-label="Scroll down"
         >
           <ChevronDown className="h-5 w-5 text-white" />
@@ -97,3 +97,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
